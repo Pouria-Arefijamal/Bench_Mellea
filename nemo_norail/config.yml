@@ -1,0 +1,8 @@
+colang_version: "1.0"
+models:
+  - type: main
+    engine: openai
+    model: MODEL_PLACEHOLDER
+    parameters:
+      temperature: 0.7
+      timeout: 1800

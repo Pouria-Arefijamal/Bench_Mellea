@@ -1,0 +1,23 @@
+=== NODE hyperion-282 Fri Oct 30 18:40:15 CET 2026 ===
+Fri Oct 30 18:40:15 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.124.06             Driver Version: 570.124.06     CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-80GB          On  |   00000000:57:00.0 Off |                    0 |
+| N/A   46C    P0             67W /  400W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+{"object":"list","data":[{"id":"qwen2.5-32b","object":"model","created":1793382350,"owned_by":"vllm","root":"Qwen/Qwen2.5-32B-Instruct-AWQ","parent":null,"max_model_len":16384,"permission":[{"id":"modelperm-b7580a8508e34a31bcb58c6504cf2d1a","object":"model_permission","created":1793382350,"allow_cre
+Fri Oct 30 21:09:57 CET 2026

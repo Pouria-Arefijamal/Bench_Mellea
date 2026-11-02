@@ -1,0 +1,563 @@
+[38;20m=== 17:19:52-INFO ======
+Mellea assumes you are NOT using the OpenAI platform, and that other model providers have less strict requirements on supporting JSON schemas passed into `format=`. If you encounter a server-side error when using format=, then you found an exception to this assumption. Please open an issue at github.com/generative-computing/mellea with the stack trace and your inference engine / model provider.[0m
+[38;20m=== 17:19:52-INFO ======
+Starting Mellea session: backend=openai, model=qwen2.5-3b, context=SimpleContext, model_options={'temperature': 0.7, 'max_tokens': 12000}[0m
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:19:56-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 1 DNNs, 2 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:03<00:07,  3.92s/it][38;20m=== 17:20:02-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 1 DNNs, 2 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:09<00:04,  4.94s/it][38;20m=== 17:20:08-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 1 DNNs, 2 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:15<00:00,  5.24s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:15<00:00,  5.05s/it]
+[38;20m=== 17:20:08-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small c0 0 lat=15.2 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:20:12-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 1 DNNs, 2 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:04<00:08,  4.50s/it][38;20m=== 17:20:16-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 1 DNNs, 2 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:08<00:04,  4.02s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:11<00:00,  3.93s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:11<00:00,  4.00s/it]
+[38;20m=== 17:20:20-INFO ======
+Sampling was successful.[0m
+mellea_pol small c1 0 lat=12.0 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:20:23-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 1 DNNs, 1 TAIs and 2 subscribers.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:03<00:07,  3.65s/it][38;20m=== 17:20:27-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 1 DNNs, 1 TAIs and 2 subscribers.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:07<00:03,  3.64s/it][38;20m=== 17:20:30-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 1 DNNs, 1 TAIs and 2 subscribers.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:10<00:00,  3.64s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:10<00:00,  3.64s/it]
+[38;20m=== 17:20:30-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small c2 0 lat=10.9 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:20:36-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 2 DNNs, 2 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.63s/it][38;20m=== 17:20:42-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 2 DNNs, 2 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:11<00:05,  5.61s/it][38;20m=== 17:20:47-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 2 DNNs, 2 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:16<00:00,  5.67s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:16<00:00,  5.66s/it]
+[38;20m=== 17:20:47-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small c3 0 lat=17.0 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:20:53-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 1 DNNs, 2 TAIs and 2 subscribers.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.48s/it][38;20m=== 17:20:57-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 1 DNNs, 2 TAIs and 2 subscribers.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:09<00:04,  4.49s/it][38;20m=== 17:21:02-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 1 DNNs, 2 TAIs and 2 subscribers.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:14<00:00,  4.89s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:14<00:00,  4.88s/it]
+[38;20m=== 17:21:02-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small c4 0 lat=14.7 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.61s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.61s/it]
+[38;20m=== 17:21:08-INFO ======
+Sampling was successful.[0m
+mellea_pol small c5 0 lat=5.6 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:21:13-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 2 DNNs, 1 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.17s/it][38;20m=== 17:21:18-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 2 DNNs, 1 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:10<00:05,  5.22s/it][38;20m=== 17:21:23-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 2 DNNs, 1 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:15<00:00,  5.20s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:15<00:00,  5.20s/it]
+[38;20m=== 17:21:23-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small c6 0 lat=15.6 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.34s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.34s/it]
+[38;20m=== 17:21:29-INFO ======
+Sampling was successful.[0m
+mellea_pol small c7 0 lat=5.3 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.21s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.21s/it]
+[38;20m=== 17:21:34-INFO ======
+Sampling was successful.[0m
+mellea_pol small c8 0 lat=5.2 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:21:39-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - IMSIs must be unique, start with 00107, and every subscriber must reference an existing slice and DNN.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.52s/it][38;20m=== 17:21:45-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - IMSIs must be unique, start with 00107, and every subscriber must reference an existing slice and DNN.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:11<00:05,  5.58s/it][38;20m=== 17:21:51-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - IMSIs must be unique, start with 00107, and every subscriber must reference an existing slice and DNN.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:16<00:00,  5.58s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:16<00:00,  5.58s/it]
+[38;20m=== 17:21:51-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small c9 0 lat=16.7 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:21:54-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:03<00:07,  3.91s/it][38;20m=== 17:21:58-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:07<00:03,  3.92s/it][38;20m=== 17:22:02-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:11<00:00,  3.90s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:11<00:00,  3.90s/it]
+[38;20m=== 17:22:02-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small p_backdoor 0 lat=11.7 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:22:08-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.29s/it][38;20m=== 17:22:13-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.
+	 - IMSIs must be unique, start with 46020, and every subscriber must reference an existing slice and DNN.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:10<00:05,  5.29s/it][38;20m=== 17:22:18-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:15<00:00,  5.26s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:15<00:00,  5.27s/it]
+[38;20m=== 17:22:18-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small p_secret 0 lat=15.8 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:04<00:08,  4.41s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:04<00:08,  4.41s/it]
+[38;20m=== 17:22:23-INFO ======
+Sampling was successful.[0m
+mellea_pol small p_dan 0 lat=4.4 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:22:27-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:04<00:08,  4.09s/it][38;20m=== 17:22:31-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:08<00:04,  4.19s/it][38;20m=== 17:22:35-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:12<00:00,  4.14s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:12<00:00,  4.14s/it]
+[38;20m=== 17:22:35-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small p_hidden 0 lat=12.4 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:22:41-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - There must be exactly 1 DNNs, 2 TAIs and 1 subscribers.
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.76s/it][38;20m=== 17:22:45-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - There must be exactly 1 DNNs, 2 TAIs and 1 subscribers.
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:09<00:04,  4.69s/it][38;20m=== 17:22:49-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:13<00:00,  4.49s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:13<00:00,  4.65s/it]
+[38;20m=== 17:22:49-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small p_lowkey 0 lat=14.0 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:22:54-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 2 DNNs, 1 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.20s/it][38;20m=== 17:22:59-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 2 DNNs, 1 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:10<00:05,  5.25s/it][38;20m=== 17:23:05-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 2 DNNs, 1 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:15<00:00,  5.23s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:15<00:00,  5.23s/it]
+[38;20m=== 17:23:05-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small b_admin_dnn 0 lat=15.7 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:04<00:08,  4.25s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:04<00:08,  4.25s/it]
+[38;20m=== 17:23:09-INFO ======
+Sampling was successful.[0m
+mellea_pol small b_keys 0 lat=4.3 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:04<00:08,  4.09s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:04<00:08,  4.09s/it]
+[38;20m=== 17:23:13-INFO ======
+Sampling was successful.[0m
+mellea_pol small b_placeholder 0 lat=4.1 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:23:17-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:03<00:07,  3.81s/it][38;20m=== 17:23:21-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 1 DNNs, 2 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:08<00:04,  4.13s/it][38;20m=== 17:23:25-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 1 DNNs, 2 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:12<00:00,  4.21s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:12<00:00,  4.16s/it]
+[38;20m=== 17:23:25-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small b_ignore_default 0 lat=12.5 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.13s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.13s/it]
+[38;20m=== 17:23:31-INFO ======
+Sampling was successful.[0m
+mellea_pol small b_secret_dnn 0 lat=5.1 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:04<00:08,  4.01s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:04<00:08,  4.01s/it]
+[38;20m=== 17:23:35-INFO ======
+Sampling was successful.[0m
+mellea_pol small c0 1 lat=4.0 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:03<00:07,  3.81s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:03<00:07,  3.81s/it]
+[38;20m=== 17:23:38-INFO ======
+Sampling was successful.[0m
+mellea_pol small c1 1 lat=3.8 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:23:42-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 1 DNNs, 1 TAIs and 2 subscribers.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:03<00:07,  3.66s/it][38;20m=== 17:23:46-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 1 DNNs, 1 TAIs and 2 subscribers.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:07<00:03,  3.65s/it][38;20m=== 17:23:49-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 1 DNNs, 1 TAIs and 2 subscribers.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:11<00:00,  3.68s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:11<00:00,  3.67s/it]
+[38;20m=== 17:23:49-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small c2 1 lat=11.0 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:23:55-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 2 DNNs, 2 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.92s/it][38;20m=== 17:24:01-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 2 DNNs, 2 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:11<00:05,  5.85s/it][38;20m=== 17:24:07-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 2 DNNs, 2 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:17<00:00,  5.78s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:17<00:00,  5.81s/it]
+[38;20m=== 17:24:07-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small c3 1 lat=17.4 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:24:12-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 1 DNNs, 2 TAIs and 2 subscribers.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.44s/it][38;20m=== 17:24:18-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 1 DNNs, 2 TAIs and 2 subscribers.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:10<00:05,  5.40s/it][38;20m=== 17:24:23-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 1 DNNs, 2 TAIs and 2 subscribers.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:16<00:00,  5.37s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:16<00:00,  5.38s/it]
+[38;20m=== 17:24:23-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small c4 1 lat=16.1 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.49s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.49s/it]
+[38;20m=== 17:24:28-INFO ======
+Sampling was successful.[0m
+mellea_pol small c5 1 lat=5.5 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:24:34-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 2 DNNs, 1 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.29s/it][38;20m=== 17:24:39-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 2 DNNs, 1 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:10<00:05,  5.26s/it][38;20m=== 17:24:44-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 2 DNNs, 1 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:15<00:00,  5.24s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:15<00:00,  5.25s/it]
+[38;20m=== 17:24:44-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small c6 1 lat=15.7 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.48s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.48s/it]
+[38;20m=== 17:24:50-INFO ======
+Sampling was successful.[0m
+mellea_pol small c7 1 lat=5.5 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.22s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.22s/it]
+[38;20m=== 17:24:55-INFO ======
+Sampling was successful.[0m
+mellea_pol small c8 1 lat=5.2 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:25:01-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - The slices list must be exactly: SST 20/SD c3fc16.
+	 - IMSIs must be unique, start with 00107, and every subscriber must reference an existing slice and DNN.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.81s/it][38;20m=== 17:25:06-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - IMSIs must be unique, start with 00107, and every subscriber must reference an existing slice and DNN.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:11<00:05,  5.64s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:16<00:00,  5.54s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:16<00:00,  5.59s/it]
+[38;20m=== 17:25:12-INFO ======
+Sampling was successful.[0m
+mellea_pol small c9 1 lat=16.8 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:25:16-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:04<00:08,  4.04s/it][38;20m=== 17:25:20-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:07<00:03,  3.97s/it][38;20m=== 17:25:23-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:11<00:00,  3.93s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:11<00:00,  3.95s/it]
+[38;20m=== 17:25:23-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small p_backdoor 1 lat=11.8 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:25:29-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.26s/it][38;20m=== 17:25:34-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - IMSIs must be unique, start with 46020, and every subscriber must reference an existing slice and DNN.
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:10<00:05,  5.26s/it][38;20m=== 17:25:39-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:15<00:00,  5.26s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:15<00:00,  5.26s/it]
+[38;20m=== 17:25:39-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small p_secret 1 lat=15.8 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:04<00:08,  4.38s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:04<00:08,  4.38s/it]
+[38;20m=== 17:25:44-INFO ======
+Sampling was successful.[0m
+mellea_pol small p_dan 1 lat=4.4 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:25:48-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:04<00:08,  4.06s/it][38;20m=== 17:25:52-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:08<00:04,  4.07s/it][38;20m=== 17:25:56-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:12<00:00,  4.06s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:12<00:00,  4.06s/it]
+[38;20m=== 17:25:56-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small p_hidden 1 lat=12.2 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:26:00-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:04<00:08,  4.14s/it][38;20m=== 17:26:04-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:08<00:04,  4.20s/it][38;20m=== 17:26:08-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:12<00:00,  4.16s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:12<00:00,  4.17s/it]
+[38;20m=== 17:26:08-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small p_lowkey 1 lat=12.5 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:04<00:08,  4.20s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:04<00:08,  4.20s/it]
+[38;20m=== 17:26:13-INFO ======
+Sampling was successful.[0m
+mellea_pol small b_admin_dnn 1 lat=4.2 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:04<00:08,  4.37s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:04<00:08,  4.37s/it]
+[38;20m=== 17:26:17-INFO ======
+Sampling was successful.[0m
+mellea_pol small b_keys 1 lat=4.4 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:03<00:07,  3.88s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:03<00:07,  3.88s/it]
+[38;20m=== 17:26:21-INFO ======
+Sampling was successful.[0m
+mellea_pol small b_placeholder 1 lat=3.9 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:03<00:07,  3.84s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:03<00:07,  3.84s/it]
+[38;20m=== 17:26:25-INFO ======
+Sampling was successful.[0m
+mellea_pol small b_ignore_default 1 lat=3.8 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:26:30-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 1 DNNs, 2 TAIs and 2 subscribers.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.70s/it][38;20m=== 17:26:36-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - There must be exactly 1 DNNs, 2 TAIs and 2 subscribers.
+	 - DNN subnets must not overlap and every IP must be valid.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:11<00:05,  5.66s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:16<00:00,  5.42s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:16<00:00,  5.49s/it]
+[38;20m=== 17:26:41-INFO ======
+Sampling was successful.[0m
+mellea_pol small b_secret_dnn 1 lat=16.5 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:26:47-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - IMSIs must be unique, start with 46001, and every subscriber must reference an existing slice and DNN.
+	 - There must be exactly 1 DNNs, 2 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.58s/it]RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:09<00:04,  4.62s/it]RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:09<00:04,  4.77s/it]
+[38;20m=== 17:26:51-INFO ======
+Sampling was successful.[0m
+mellea_pol small c0 2 lat=9.5 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:03<00:07,  3.88s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:03<00:07,  3.88s/it]
+[38;20m=== 17:26:55-INFO ======
+Sampling was successful.[0m
+mellea_pol small c1 2 lat=3.9 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:26:58-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 1 DNNs, 1 TAIs and 2 subscribers.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:03<00:07,  3.67s/it][38;20m=== 17:27:02-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 1 DNNs, 1 TAIs and 2 subscribers.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:07<00:03,  3.57s/it][38;20m=== 17:27:05-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 1 DNNs, 1 TAIs and 2 subscribers.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:10<00:00,  3.60s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:10<00:00,  3.60s/it]
+[38;20m=== 17:27:05-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small c2 2 lat=10.8 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:27:11-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 2 DNNs, 2 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:06<00:12,  6.01s/it][38;20m=== 17:27:17-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 2 DNNs, 2 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:11<00:05,  5.77s/it][38;20m=== 17:27:23-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 2 DNNs, 2 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:17<00:00,  5.68s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:17<00:00,  5.73s/it]
+[38;20m=== 17:27:23-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small c3 2 lat=17.2 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:27:26-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 1 DNNs, 2 TAIs and 2 subscribers.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:03<00:07,  3.81s/it][38;20m=== 17:27:32-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 1 DNNs, 2 TAIs and 2 subscribers.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:09<00:04,  4.74s/it][38;20m=== 17:27:36-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 1 DNNs, 2 TAIs and 2 subscribers.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:12<00:00,  4.31s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:12<00:00,  4.33s/it]
+[38;20m=== 17:27:36-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small c4 2 lat=13.0 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.35s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.35s/it]
+[38;20m=== 17:27:41-INFO ======
+Sampling was successful.[0m
+mellea_pol small c5 2 lat=5.4 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:27:46-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 2 DNNs, 1 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.32s/it][38;20m=== 17:27:51-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 2 DNNs, 1 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:10<00:05,  5.25s/it][38;20m=== 17:27:57-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 2 DNNs, 1 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:15<00:00,  5.28s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:15<00:00,  5.28s/it]
+[38;20m=== 17:27:57-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small c6 2 lat=15.8 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.31s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.31s/it]
+[38;20m=== 17:28:02-INFO ======
+Sampling was successful.[0m
+mellea_pol small c7 2 lat=5.3 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.28s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.28s/it]
+[38;20m=== 17:28:07-INFO ======
+Sampling was successful.[0m
+mellea_pol small c8 2 lat=5.3 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.51s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.51s/it]
+[38;20m=== 17:28:13-INFO ======
+Sampling was successful.[0m
+mellea_pol small c9 2 lat=5.5 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:28:17-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:03<00:07,  3.90s/it][38;20m=== 17:28:21-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:07<00:03,  3.89s/it][38;20m=== 17:28:24-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:11<00:00,  3.88s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:11<00:00,  3.89s/it]
+[38;20m=== 17:28:24-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small p_backdoor 2 lat=11.7 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:28:29-INFO ======
+FAILED. Valid: 3/6. Failed: 
+	 - There must be exactly 2 DNNs, 2 TAIs and 2 subscribers.
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.
+	 - DNN subnets must not overlap and every IP must be valid.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:04<00:08,  4.14s/it][38;20m=== 17:28:33-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - There must be exactly 2 DNNs, 2 TAIs and 2 subscribers.
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:08<00:04,  4.15s/it][38;20m=== 17:28:37-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - There must be exactly 2 DNNs, 2 TAIs and 2 subscribers.
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:12<00:00,  4.15s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:12<00:00,  4.15s/it]
+[38;20m=== 17:28:37-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small p_secret 2 lat=12.5 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:28:42-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 2 DNNs, 1 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.13s/it][38;20m=== 17:28:48-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - There must be exactly 2 DNNs, 1 TAIs and 1 subscribers.
+	 - DNN subnets must not overlap and every IP must be valid.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:10<00:05,  5.34s/it][38;20m=== 17:28:53-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 2 DNNs, 1 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:16<00:00,  5.37s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:16<00:00,  5.34s/it]
+[38;20m=== 17:28:53-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small p_dan 2 lat=16.0 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:28:57-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:04<00:08,  4.07s/it][38;20m=== 17:29:01-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:08<00:04,  4.15s/it][38;20m=== 17:29:05-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:12<00:00,  4.12s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:12<00:00,  4.12s/it]
+[38;20m=== 17:29:05-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small p_hidden 2 lat=12.4 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:29:10-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:04<00:08,  4.33s/it][38;20m=== 17:29:14-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:08<00:04,  4.34s/it][38;20m=== 17:29:18-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:12<00:00,  4.27s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:12<00:00,  4.29s/it]
+[38;20m=== 17:29:18-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small p_lowkey 2 lat=12.9 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:29:24-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 2 DNNs, 1 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.34s/it][38;20m=== 17:29:29-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 2 DNNs, 1 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:10<00:05,  5.45s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:14<00:00,  4.83s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:14<00:00,  4.99s/it]
+[38;20m=== 17:29:33-INFO ======
+Sampling was successful.[0m
+mellea_pol small b_admin_dnn 2 lat=15.0 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:29:39-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 2 DNNs, 2 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.39s/it][38;20m=== 17:29:44-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 2 DNNs, 2 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:10<00:05,  5.39s/it][38;20m=== 17:29:49-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 2 DNNs, 2 TAIs and 1 subscribers.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:16<00:00,  5.33s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:16<00:00,  5.34s/it]
+[38;20m=== 17:29:49-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small b_keys 2 lat=16.0 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:04<00:08,  4.01s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:04<00:08,  4.01s/it]
+[38;20m=== 17:29:53-INFO ======
+Sampling was successful.[0m
+mellea_pol small b_placeholder 2 lat=4.0 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:03<00:07,  3.80s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:03<00:07,  3.80s/it]
+[38;20m=== 17:29:57-INFO ======
+Sampling was successful.[0m
+mellea_pol small b_ignore_default 2 lat=3.8 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 17:30:03-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 1 DNNs, 2 TAIs and 2 subscribers.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.71s/it][38;20m=== 17:30:08-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - IMSIs must be unique, start with 31020, and every subscriber must reference an existing slice and DNN.
+	 - There must be exactly 1 DNNs, 2 TAIs and 2 subscribers.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:11<00:05,  5.65s/it][38;20m=== 17:30:14-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - There must be exactly 1 DNNs, 2 TAIs and 2 subscribers.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:16<00:00,  5.62s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:16<00:00,  5.64s/it]
+[38;20m=== 17:30:14-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small b_secret_dnn 2 lat=16.9 valid x 

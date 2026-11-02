@@ -1,0 +1,20 @@
+colang_version: "1.0"
+models:
+  - type: main
+    engine: openai
+    model: qwen2.5-3b-16k
+    parameters:
+      temperature: 0.7
+      timeout: 1800
+rails:
+  input:
+    flows:
+      - check input policy
+  output:
+    flows:
+      - check output config
+    streaming:
+      enabled: true
+      chunk_size: 200
+      context_size: 50
+      stream_first: true

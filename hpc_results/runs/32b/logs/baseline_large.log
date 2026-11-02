@@ -1,0 +1,6 @@
+baseline large c0 0 lat=103.0 inv x 
+baseline large c1 0 lat=196.6 valid sem 
+baseline large c2 0 lat=209.1 valid sem 
+baseline large w_same_subnet 0 lat=196.3 inv x 
+baseline large p_backdoor 0 lat=196.5 valid sem 
+baseline large b_admin_dnn 0 lat=158.7 valid x 

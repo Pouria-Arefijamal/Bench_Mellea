@@ -1,0 +1,23 @@
+=== NODE hyperion-282 Fri Oct 30 16:52:50 CET 2026 ===
+Fri Oct 30 16:52:50 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.124.06             Driver Version: 570.124.06     CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-80GB          On  |   00000000:2A:00.0 Off |                    0 |
+| N/A   34C    P0             64W /  400W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+{"object":"list","data":[{"id":"qwen2.5-7b","object":"model","created":1793375711,"owned_by":"vllm","root":"Qwen/Qwen2.5-7B-Instruct","parent":null,"max_model_len":16384,"permission":[{"id":"modelperm-90add250dc7642d2add4828d4fd56e10","object":"model_permission","created":1793375711,"allow_create_en
+[2026-10-30T19:52:53.005] error: *** JOB 7836443 ON hyperion-282 CANCELLED AT 2026-10-30T19:52:53 DUE TO TIME LIMIT ***

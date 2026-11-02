@@ -1,0 +1,28 @@
+[
+ {
+  "model": "qwen2.5-stream7",
+  "size": "small",
+  "mode": "free",
+  "rep": 0,
+  "ttft": 0.05703061353415251,
+  "latency": 6.489213357679546,
+  "completion_tokens": 580,
+  "decode_ms_per_tok": 11.109123910441093,
+  "prompt_tokens": 685,
+  "struct_valid": true,
+  "sem_correct": true
+ },
+ {
+  "model": "qwen2.5-stream7",
+  "size": "small",
+  "mode": "schema",
+  "rep": 0,
+  "ttft": 18.711982500739396,
+  "latency": 23.52572186011821,
+  "completion_tokens": 403,
+  "decode_ms_per_tok": 11.97447601835526,
+  "prompt_tokens": 685,
+  "struct_valid": true,
+  "sem_correct": true
+ }
+]

@@ -1,0 +1,23 @@
+=== NODE hyperion-257 Fri Oct 30 12:08:05 CET 2026 ===
+Fri Oct 30 12:08:05 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.124.06             Driver Version: 570.124.06     CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100 80GB PCIe          On  |   00000000:CE:00.0 Off |                    0 |
+| N/A   48C    P0             65W /  300W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+{"object":"list","data":[{"id":"qwen2.5-smoke7","object":"model","created":1793358839,"owned_by":"vllm","root":"Qwen/Qwen2.5-7B-Instruct","parent":null,"max_model_len":16384,"permission":[{"id":"modelperm-f626c75e6fbe4e60916edf773452a6d1","object":"model_permission","created":1793358839,"allow_creat
+[2026-10-30T12:18:08.017] error: *** JOB 7836250 ON hyperion-257 CANCELLED AT 2026-10-30T12:18:08 DUE TO TIME LIMIT ***

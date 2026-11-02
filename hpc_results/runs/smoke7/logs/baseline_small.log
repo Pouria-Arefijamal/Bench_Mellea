@@ -1,0 +1,4 @@
+baseline small c0 0 lat=7.3 valid sem 
+baseline small w_same_subnet 0 lat=8.7 valid x 
+baseline small p_backdoor 0 lat=6.6 valid sem 
+baseline small b_keys 0 lat=7.4 valid x 

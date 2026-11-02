@@ -1,0 +1,15 @@
+colang_version: "1.0"
+models:
+  - type: main
+    engine: openai
+    model: qwen2.5-3b-16k
+    parameters:
+      temperature: 0.7
+      timeout: 1800
+rails:
+  input:
+    flows:
+      - self check input
+  output:
+    flows:
+      - self check output

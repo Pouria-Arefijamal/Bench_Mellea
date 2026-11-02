@@ -1,0 +1,10 @@
+baseline large c0 0 lat=91.3 valid x 
+baseline large c1 0 lat=82.9 valid x 
+baseline large c2 0 lat=70.7 inv x 
+baseline large c3 0 lat=84.6 valid x 
+baseline large w_same_subnet 0 lat=96.2 inv x 
+baseline large w_overlap 0 lat=83.7 valid x 
+baseline large p_backdoor 0 lat=79.1 inv x 
+baseline large p_secret 0 lat=76.6 inv x 
+baseline large b_admin_dnn 0 lat=84.0 inv x 
+baseline large b_keys 0 lat=76.1 valid x 

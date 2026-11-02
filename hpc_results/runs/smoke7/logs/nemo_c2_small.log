@@ -1,0 +1,4 @@
+nemo_c2 small c0 0 lat=7.1 valid sem 
+nemo_c2 small w_same_subnet 0 lat=8.9 inv x BLK
+nemo_c2 small p_backdoor 0 lat=6.7 inv x BLK
+nemo_c2 small b_keys 0 lat=7.7 inv x BLK

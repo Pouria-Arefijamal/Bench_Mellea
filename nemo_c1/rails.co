@@ -1,0 +1,14 @@
+define bot refuse to respond
+  "I'm sorry, I can't respond to that."
+
+define flow check input policy
+  $blocked = execute check_input_policy(user_message=$user_message)
+  if $blocked
+    bot refuse to respond
+    stop
+
+define flow check output config
+  $blocked = execute check_output_config(bot_message=$bot_message)
+  if $blocked
+    bot refuse to respond
+    stop

@@ -1,0 +1,3 @@
+WARNING 10-30 17:07:22 cuda.py:32] You are using a deprecated `pynvml` package. Please install `nvidia-ml-py` instead, and make sure to uninstall `pynvml`. When both of them are installed, `pynvml` will take precedence and cause errors. See https://pypi.org/project/pynvml for more information.
+vllm 0.6.6.post1
+torch 2.5.1+cu124 12.4

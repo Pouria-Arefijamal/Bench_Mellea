@@ -1,0 +1,143 @@
+[38;20m=== 19:10:01-INFO ======
+Mellea assumes you are NOT using the OpenAI platform, and that other model providers have less strict requirements on supporting JSON schemas passed into `format=`. If you encounter a server-side error when using format=, then you found an exception to this assumption. Please open an issue at github.com/generative-computing/mellea with the stack trace and your inference engine / model provider.[0m
+[38;20m=== 19:10:01-INFO ======
+Starting Mellea session: backend=openai, model=qwen2.5-7b, context=SimpleContext, model_options={'temperature': 0.7, 'max_tokens': 12000}[0m
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 19:11:11-INFO ======
+FAILED. Valid: 4/5. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 001 and MNC must be 93.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [01:10<02:20, 70.17s/it][38;20m=== 19:12:21-INFO ======
+FAILED. Valid: 4/5. Failed: 
+	 - The slices list must be exactly: SST 4/SD df94d3, SST 5/SD 918a65, SST 128/SD 6447b3, SST 2/SD 52f64e, SST 5/SD 278dd7, SST 2/SD 9c991c, SST 5/SD 5773e6, SST 200/SD 69ffea.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [02:19<01:09, 69.97s/it][38;20m=== 19:13:40-INFO ======
+FAILED. Valid: 3/5. Failed: 
+	 - There must be exactly 10 DNNs, 40 TAIs and 30 subscribers.
+	 - The slices list must be exactly: SST 4/SD df94d3, SST 5/SD 918a65, SST 128/SD 6447b3, SST 2/SD 52f64e, SST 5/SD 278dd7, SST 2/SD 9c991c, SST 5/SD 5773e6, SST 200/SD 69ffea.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [03:39<00:00, 74.23s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [03:39<00:00, 73.10s/it]
+[38;20m=== 19:13:40-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea large c0 0 lat=219.4 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 19:14:50-INFO ======
+FAILED. Valid: 4/5. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 262 and MNC must be 20.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [01:09<02:19, 69.84s/it][38;20m=== 19:16:14-INFO ======
+FAILED. Valid: 3/5. Failed: 
+	 - There must be exactly 10 DNNs, 40 TAIs and 30 subscribers.
+	 - The JSON must parse and match the required structure; PLMN MCC must be 262 and MNC must be 20.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [02:34<01:18, 78.43s/it][38;20m=== 19:17:22-INFO ======
+FAILED. Valid: 4/5. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 262 and MNC must be 20.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [03:42<00:00, 73.64s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [03:42<00:00, 74.08s/it]
+[38;20m=== 19:17:22-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea large c1 0 lat=222.2 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 19:18:47-INFO ======
+FAILED. Valid: 3/5. Failed: 
+	 - There must be exactly 10 DNNs, 40 TAIs and 30 subscribers.
+	 - The JSON must parse and match the required structure; PLMN MCC must be 310 and MNC must be 20.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [01:24<02:49, 84.99s/it][38;20m=== 19:20:12-INFO ======
+FAILED. Valid: 2/5. Failed: 
+	 - The slices list must be exactly: SST 200/SD 5ed056, SST 10/SD 8a900e, SST 3/SD 5457c2, SST 200/SD b41eea, SST 10/SD b4666c, SST 20/SD 71cd31, SST 1/SD 3f6863, SST 5/SD 1e883f.
+	 - There must be exactly 10 DNNs, 40 TAIs and 30 subscribers.
+	 - The JSON must parse and match the required structure; PLMN MCC must be 310 and MNC must be 20.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [02:49<01:24, 84.70s/it][38;20m=== 19:22:13-INFO ======
+FAILED. Valid: 3/5. Failed: 
+	 - There must be exactly 10 DNNs, 40 TAIs and 30 subscribers.
+	 - The JSON must parse and match the required structure; PLMN MCC must be 310 and MNC must be 20.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [04:50<00:00, 101.39s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [04:50<00:00, 96.91s/it] 
+[38;20m=== 19:22:13-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea large c2 0 lat=290.7 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [01:07<02:15, 67.56s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [01:07<02:15, 67.56s/it]
+[38;20m=== 19:23:21-INFO ======
+Sampling was successful.[0m
+mellea large c3 0 lat=67.6 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 19:25:51-INFO ======
+FAILED. Valid: 0/5. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 262 and MNC must be 93.
+	 - The slices list must be exactly: SST 20/SD d56c4a, SST 50/SD ecf120, SST 3/SD 50589a, SST 20/SD 9c38fa, SST 10/SD c2e884, SST 50/SD 7ad450, SST 10/SD 261b55, SST 5/SD 930b5a.
+	 - IMSIs must be unique, start with 26293, and every subscriber must reference an existing slice and DNN.
+	 - There must be exactly 10 DNNs, 40 TAIs and 30 subscribers.
+	 - DNN subnets must not overlap and every IP must be valid.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [02:30<05:01, 150.52s/it][38;20m=== 19:27:16-INFO ======
+FAILED. Valid: 3/5. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 262 and MNC must be 93.
+	 - There must be exactly 10 DNNs, 40 TAIs and 30 subscribers.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [03:55<01:52, 112.03s/it][38;20m=== 19:28:24-INFO ======
+FAILED. Valid: 4/5. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 262 and MNC must be 93.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [05:03<00:00, 92.06s/it] RejectionSamplingStrategy: 100%|██████████| 3/3 [05:03<00:00, 101.30s/it]
+[38;20m=== 19:28:24-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea large w_same_subnet 0 lat=303.9 inv x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 19:30:54-INFO ======
+FAILED. Valid: 0/5. Failed: 
+	 - DNN subnets must not overlap and every IP must be valid.
+	 - IMSIs must be unique, start with 00193, and every subscriber must reference an existing slice and DNN.
+	 - The slices list must be exactly: SST 1/SD bb19c3, SST 4/SD 5e470c, SST 5/SD 714f8d, SST 10/SD 4c4dac, SST 10/SD f6c8c1, SST 4/SD 9b4779, SST 5/SD a01156, SST 128/SD 789ef6.
+	 - There must be exactly 10 DNNs, 40 TAIs and 30 subscribers.
+	 - The JSON must parse and match the required structure; PLMN MCC must be 001 and MNC must be 93.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [02:29<04:58, 149.20s/it][38;20m=== 19:32:35-INFO ======
+FAILED. Valid: 3/5. Failed: 
+	 - DNN subnets must not overlap and every IP must be valid.
+	 - There must be exactly 10 DNNs, 40 TAIs and 30 subscribers.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [04:10<02:01, 121.19s/it][38;20m=== 19:33:47-INFO ======
+FAILED. Valid: 3/5. Failed: 
+	 - DNN subnets must not overlap and every IP must be valid.
+	 - There must be exactly 10 DNNs, 40 TAIs and 30 subscribers.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [05:22<00:00, 98.49s/it] RejectionSamplingStrategy: 100%|██████████| 3/3 [05:22<00:00, 107.42s/it]
+[38;20m=== 19:33:47-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea large w_overlap 0 lat=322.3 inv x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 19:35:12-INFO ======
+FAILED. Valid: 4/5. Failed: 
+	 - There must be exactly 10 DNNs, 40 TAIs and 30 subscribers.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [01:25<02:51, 85.70s/it][38;20m=== 19:37:42-INFO ======
+FAILED. Valid: 0/5. Failed: 
+	 - DNN subnets must not overlap and every IP must be valid.
+	 - IMSIs must be unique, start with 262001, and every subscriber must reference an existing slice and DNN.
+	 - The slices list must be exactly: SST 200/SD e284cb, SST 100/SD 0ded04, SST 3/SD 1a167f, SST 128/SD f1de70, SST 50/SD 44ff3f, SST 4/SD a06c33, SST 20/SD 314fe4, SST 1/SD c4c7d5.
+	 - The JSON must parse and match the required structure; PLMN MCC must be 262 and MNC must be 001.
+	 - There must be exactly 10 DNNs, 40 TAIs and 30 subscribers.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [03:54<02:03, 123.02s/it][38;20m=== 19:38:52-INFO ======
+FAILED. Valid: 4/5. Failed: 
+	 - The slices list must be exactly: SST 200/SD e284cb, SST 100/SD 0ded04, SST 3/SD 1a167f, SST 128/SD f1de70, SST 50/SD 44ff3f, SST 4/SD a06c33, SST 20/SD 314fe4, SST 1/SD c4c7d5.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [05:04<00:00, 98.86s/it] RejectionSamplingStrategy: 100%|██████████| 3/3 [05:04<00:00, 101.65s/it]
+[38;20m=== 19:38:52-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea large p_backdoor 0 lat=305.0 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [01:08<02:16, 68.18s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [01:08<02:16, 68.18s/it]
+[38;20m=== 19:40:00-INFO ======
+Sampling was successful.[0m
+mellea large p_secret 0 lat=68.2 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 19:41:07-INFO ======
+FAILED. Valid: 3/5. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 208 and MNC must be 93.
+	 - There must be exactly 10 DNNs, 40 TAIs and 30 subscribers.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [01:06<02:13, 66.78s/it][38;20m=== 19:43:36-INFO ======
+FAILED. Valid: 0/5. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 208 and MNC must be 93.
+	 - DNN subnets must not overlap and every IP must be valid.
+	 - The slices list must be exactly: SST 2/SD c5418f, SST 200/SD 7003cb, SST 100/SD a17563, SST 128/SD 3567e8, SST 100/SD 3c3338, SST 4/SD b54a85, SST 200/SD 682d40, SST 50/SD 4ffe13.
+	 - There must be exactly 10 DNNs, 40 TAIs and 30 subscribers.
+	 - IMSIs must be unique, start with 20893, and every subscriber must reference an existing slice and DNN.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [03:35<01:55, 115.21s/it][38;20m=== 19:44:43-INFO ======
+FAILED. Valid: 4/5. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 208 and MNC must be 93.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [04:43<00:00, 93.49s/it] RejectionSamplingStrategy: 100%|██████████| 3/3 [04:43<00:00, 94.51s/it]
+[38;20m=== 19:44:43-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea large b_admin_dnn 0 lat=283.5 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 19:46:08-INFO ======
+FAILED. Valid: 4/5. Failed: 
+	 - There must be exactly 10 DNNs, 40 TAIs and 30 subscribers.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [01:24<02:49, 84.56s/it][38;20m=== 19:47:42-INFO ======
+FAILED. Valid: 3/5. Failed: 
+	 - There must be exactly 10 DNNs, 40 TAIs and 30 subscribers.
+	 - The slices list must be exactly: SST 20/SD 5b5a3b, SST 5/SD f20cff, SST 5/SD 4bad3e, SST 5/SD c0a8b1, SST 1/SD 51a214, SST 1/SD fb9bac, SST 2/SD 1ce2f8, SST 1/SD db75da.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [02:58<01:30, 90.34s/it][38;20m=== 19:48:51-INFO ======
+FAILED. Valid: 4/5. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 001 and MNC must be 93.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [04:07<00:00, 80.48s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [04:07<00:00, 82.56s/it]
+[38;20m=== 19:48:51-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea large b_keys 0 lat=247.7 valid x 

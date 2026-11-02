@@ -1,0 +1,6 @@
+nemo_c1 large c0 0 lat=72.8 valid x 
+nemo_c1 large c1 0 lat=131.9 valid x 
+nemo_c1 large c2 0 lat=126.8 inv x BLK
+nemo_c1 large w_same_subnet 0 lat=78.9 valid x 
+nemo_c1 large p_backdoor 0 lat=0.0 inv x BLK
+nemo_c1 large b_admin_dnn 0 lat=64.5 valid x 

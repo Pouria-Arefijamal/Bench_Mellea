@@ -1,0 +1,37 @@
+[38;20m=== 18:46:34-INFO ======
+Mellea assumes you are NOT using the OpenAI platform, and that other model providers have less strict requirements on supporting JSON schemas passed into `format=`. If you encounter a server-side error when using format=, then you found an exception to this assumption. Please open an issue at github.com/generative-computing/mellea with the stack trace and your inference engine / model provider.[0m
+[38;20m=== 18:46:34-INFO ======
+Starting Mellea session: backend=openai, model=qwen2.5-14b, context=SimpleContext, model_options={'temperature': 0.7, 'max_tokens': 12000}[0m
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [01:59<03:58, 119.45s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [01:59<03:58, 119.45s/it]
+[38;20m=== 18:48:33-INFO ======
+Sampling was successful.[0m
+mellea large c0 0 lat=119.5 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [02:01<04:02, 121.18s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [02:01<04:02, 121.18s/it]
+[38;20m=== 18:50:35-INFO ======
+Sampling was successful.[0m
+mellea large c1 0 lat=121.2 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [01:59<03:58, 119.33s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [01:59<03:58, 119.33s/it]
+[38;20m=== 18:52:34-INFO ======
+Sampling was successful.[0m
+mellea large c2 0 lat=119.3 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:54:36-INFO ======
+FAILED. Valid: 4/5. Failed: 
+	 - DNN subnets must not overlap and every IP must be valid.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [02:02<04:04, 122.04s/it][38;20m=== 18:56:36-INFO ======
+FAILED. Valid: 4/5. Failed: 
+	 - DNN subnets must not overlap and every IP must be valid.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [04:02<02:00, 120.96s/it][38;20m=== 18:58:35-INFO ======
+FAILED. Valid: 4/5. Failed: 
+	 - DNN subnets must not overlap and every IP must be valid.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [06:01<00:00, 120.23s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [06:01<00:00, 120.53s/it]
+[38;20m=== 18:58:35-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea large w_same_subnet 0 lat=361.6 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [01:59<03:59, 119.80s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [01:59<03:59, 119.80s/it]
+[38;20m=== 19:00:35-INFO ======
+Sampling was successful.[0m
+mellea large p_backdoor 0 lat=119.8 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [02:01<04:02, 121.08s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [02:01<04:02, 121.08s/it]
+[38;20m=== 19:02:36-INFO ======
+Sampling was successful.[0m
+mellea large b_admin_dnn 0 lat=121.1 valid sem 

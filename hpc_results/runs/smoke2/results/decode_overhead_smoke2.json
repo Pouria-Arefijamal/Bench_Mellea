@@ -1,0 +1,54 @@
+[
+ {
+  "model": "qwen2.5-smoke2",
+  "size": "small",
+  "mode": "free",
+  "rep": 0,
+  "ttft": 0.05704702530056238,
+  "latency": 6.475123845972121,
+  "completion_tokens": 580,
+  "decode_ms_per_tok": 11.084761348310119,
+  "prompt_tokens": 685,
+  "struct_valid": true,
+  "sem_correct": true
+ },
+ {
+  "model": "qwen2.5-smoke2",
+  "size": "small",
+  "mode": "schema",
+  "rep": 0,
+  "ttft": 13.971715447492898,
+  "latency": 18.761198815889657,
+  "completion_tokens": 403,
+  "decode_ms_per_tok": 11.914137732330246,
+  "prompt_tokens": 685,
+  "struct_valid": true,
+  "sem_correct": true
+ },
+ {
+  "model": "qwen2.5-smoke2",
+  "size": "large",
+  "mode": "free",
+  "rep": 0,
+  "ttft": 0.05928298179060221,
+  "latency": 81.8548084134236,
+  "completion_tokens": 7225,
+  "decode_ms_per_tok": 11.322747152773116,
+  "prompt_tokens": 766,
+  "struct_valid": true,
+  "sem_correct": false
+ },
+ {
+  "model": "qwen2.5-smoke2",
+  "size": "large",
+  "mode": "schema",
+  "rep": 0,
+  "ttft": 0.7095144568011165,
+  "latency": 89.74851439800113,
+  "completion_tokens": 7392,
+  "decode_ms_per_tok": 12.046948984061698,
+  "prompt_tokens": 766,
+  "struct_valid": true,
+  "sem_correct": false
+ }
+]

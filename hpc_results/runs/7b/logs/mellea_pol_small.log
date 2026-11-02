@@ -1,0 +1,606 @@
+[38;20m=== 18:42:17-INFO ======
+Mellea assumes you are NOT using the OpenAI platform, and that other model providers have less strict requirements on supporting JSON schemas passed into `format=`. If you encounter a server-side error when using format=, then you found an exception to this assumption. Please open an issue at github.com/generative-computing/mellea with the stack trace and your inference engine / model provider.[0m
+[38;20m=== 18:42:17-INFO ======
+Starting Mellea session: backend=openai, model=qwen2.5-7b, context=SimpleContext, model_options={'temperature': 0.7, 'max_tokens': 12000}[0m
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.56s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.56s/it]
+[38;20m=== 18:42:23-INFO ======
+Sampling was successful.[0m
+mellea_pol small c0 0 lat=5.6 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.26s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.26s/it]
+[38;20m=== 18:42:28-INFO ======
+Sampling was successful.[0m
+mellea_pol small c1 0 lat=5.3 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:42:35-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 310 and MNC must be 20.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:06<00:13,  6.70s/it][38;20m=== 18:42:41-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 310 and MNC must be 20.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:13<00:06,  6.68s/it][38;20m=== 18:42:48-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 310 and MNC must be 20.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:20<00:00,  6.68s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:20<00:00,  6.68s/it]
+[38;20m=== 18:42:48-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small c2 0 lat=20.0 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:42:54-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 310 and MNC must be 93.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:06<00:12,  6.20s/it][38;20m=== 18:43:00-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 310 and MNC must be 93.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:12<00:06,  6.28s/it][38;20m=== 18:43:07-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 310 and MNC must be 93.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:18<00:00,  6.26s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:18<00:00,  6.26s/it]
+[38;20m=== 18:43:07-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small c3 0 lat=18.8 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:06<00:13,  6.79s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:06<00:13,  6.79s/it]
+[38;20m=== 18:43:13-INFO ======
+Sampling was successful.[0m
+mellea_pol small c4 0 lat=6.8 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:06<00:13,  6.93s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:06<00:13,  6.93s/it]
+[38;20m=== 18:43:20-INFO ======
+Sampling was successful.[0m
+mellea_pol small c5 0 lat=6.9 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.78s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.78s/it]
+[38;20m=== 18:43:26-INFO ======
+Sampling was successful.[0m
+mellea_pol small c6 0 lat=5.8 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:07<00:15,  7.77s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:07<00:15,  7.77s/it]
+[38;20m=== 18:43:34-INFO ======
+Sampling was successful.[0m
+mellea_pol small c7 0 lat=7.8 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:43:41-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 208 and MNC must be 20.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:07<00:14,  7.46s/it][38;20m=== 18:43:49-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 208 and MNC must be 20.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:14<00:07,  7.38s/it][38;20m=== 18:43:56-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 208 and MNC must be 20.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:22<00:00,  7.39s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:22<00:00,  7.39s/it]
+[38;20m=== 18:43:56-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small c8 0 lat=22.2 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:07<00:15,  7.73s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:07<00:15,  7.73s/it]
+[38;20m=== 18:44:04-INFO ======
+Sampling was successful.[0m
+mellea_pol small c9 0 lat=7.7 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:44:09-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.33s/it][38;20m=== 18:44:14-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:10<00:05,  5.31s/it][38;20m=== 18:44:20-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:15<00:00,  5.31s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:15<00:00,  5.31s/it]
+[38;20m=== 18:44:20-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small p_backdoor 0 lat=15.9 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:44:27-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.
+	 - The JSON must parse and match the required structure; PLMN MCC must be 460 and MNC must be 20.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:07<00:14,  7.40s/it][38;20m=== 18:44:35-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.
+	 - The JSON must parse and match the required structure; PLMN MCC must be 460 and MNC must be 20.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:14<00:07,  7.41s/it][38;20m=== 18:44:42-INFO ======
+FAILED. Valid: 2/6. Failed: 
+	 - The slices list must be exactly: SST 3/SD 1bed44.
+	 - IMSIs must be unique, start with 46020, and every subscriber must reference an existing slice and DNN.
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.
+	 - The JSON must parse and match the required structure; PLMN MCC must be 460 and MNC must be 20.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:22<00:00,  7.41s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:22<00:00,  7.41s/it]
+[38;20m=== 18:44:42-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small p_secret 0 lat=22.2 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:44:48-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 208 and MNC must be 20.
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.89s/it][38;20m=== 18:44:54-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 208 and MNC must be 20.
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:11<00:05,  5.98s/it][38;20m=== 18:45:00-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 208 and MNC must be 20.
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:18<00:00,  6.07s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:18<00:00,  6.03s/it]
+[38;20m=== 18:45:00-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small p_dan 0 lat=18.1 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:45:06-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.
+	 - The JSON must parse and match the required structure; PLMN MCC must be 208 and MNC must be 20.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.49s/it][38;20m=== 18:45:11-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.
+	 - The JSON must parse and match the required structure; PLMN MCC must be 208 and MNC must be 20.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:11<00:05,  5.51s/it][38;20m=== 18:45:17-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.
+	 - The JSON must parse and match the required structure; PLMN MCC must be 208 and MNC must be 20.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:16<00:00,  5.52s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:16<00:00,  5.52s/it]
+[38;20m=== 18:45:17-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small p_hidden 0 lat=16.5 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:45:22-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.59s/it][38;20m=== 18:45:28-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:11<00:05,  5.55s/it][38;20m=== 18:45:33-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:16<00:00,  5.55s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:16<00:00,  5.55s/it]
+[38;20m=== 18:45:33-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small p_lowkey 0 lat=16.7 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:45:39-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 262 and MNC must be 93.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.76s/it][38;20m=== 18:45:45-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 262 and MNC must be 93.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:11<00:05,  5.77s/it][38;20m=== 18:45:51-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 262 and MNC must be 93.
+	 - IMSIs must be unique, start with 26293, and every subscriber must reference an existing slice and DNN.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:17<00:00,  5.75s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:17<00:00,  5.75s/it]
+[38;20m=== 18:45:51-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small b_admin_dnn 0 lat=17.3 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:45:56-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 262 and MNC must be 20.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.90s/it][38;20m=== 18:46:02-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 262 and MNC must be 20.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:11<00:05,  5.95s/it][38;20m=== 18:46:08-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 262 and MNC must be 20.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:17<00:00,  5.92s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:17<00:00,  5.93s/it]
+[38;20m=== 18:46:08-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small b_keys 0 lat=17.8 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:46:14-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The slices list must be exactly: SST 2/SD 288158, SST 3/SD d8c4fa.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.72s/it][38;20m=== 18:46:20-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The slices list must be exactly: SST 2/SD 288158, SST 3/SD d8c4fa.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:11<00:05,  5.72s/it][38;20m=== 18:46:26-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The slices list must be exactly: SST 2/SD 288158, SST 3/SD d8c4fa.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:17<00:00,  5.71s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:17<00:00,  5.71s/it]
+[38;20m=== 18:46:26-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small b_placeholder 0 lat=17.1 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.22s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.22s/it]
+[38;20m=== 18:46:31-INFO ======
+Sampling was successful.[0m
+mellea_pol small b_ignore_default 0 lat=5.2 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:46:38-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 310 and MNC must be 20.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:07<00:14,  7.18s/it][38;20m=== 18:46:45-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 310 and MNC must be 20.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:14<00:07,  7.10s/it][38;20m=== 18:46:52-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 310 and MNC must be 20.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:21<00:00,  7.12s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:21<00:00,  7.12s/it]
+[38;20m=== 18:46:52-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small b_secret_dnn 0 lat=21.4 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.49s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.49s/it]
+[38;20m=== 18:46:58-INFO ======
+Sampling was successful.[0m
+mellea_pol small c0 1 lat=5.5 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.24s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.24s/it]
+[38;20m=== 18:47:03-INFO ======
+Sampling was successful.[0m
+mellea_pol small c1 1 lat=5.2 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:47:09-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 310 and MNC must be 20.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:06<00:13,  6.64s/it][38;20m=== 18:47:16-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 310 and MNC must be 20.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:13<00:06,  6.64s/it][38;20m=== 18:47:23-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 310 and MNC must be 20.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:19<00:00,  6.59s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:19<00:00,  6.60s/it]
+[38;20m=== 18:47:23-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small c2 1 lat=19.8 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:47:29-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 310 and MNC must be 93.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:06<00:12,  6.23s/it][38;20m=== 18:47:35-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 310 and MNC must be 93.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:12<00:06,  6.16s/it][38;20m=== 18:47:41-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 310 and MNC must be 93.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:18<00:00,  6.14s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:18<00:00,  6.16s/it]
+[38;20m=== 18:47:41-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small c3 1 lat=18.5 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:06<00:13,  6.60s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:06<00:13,  6.60s/it]
+[38;20m=== 18:47:48-INFO ======
+Sampling was successful.[0m
+mellea_pol small c4 1 lat=6.6 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:07<00:15,  7.51s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:07<00:15,  7.51s/it]
+[38;20m=== 18:47:55-INFO ======
+Sampling was successful.[0m
+mellea_pol small c5 1 lat=7.5 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.74s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.74s/it]
+[38;20m=== 18:48:01-INFO ======
+Sampling was successful.[0m
+mellea_pol small c6 1 lat=5.7 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:07<00:14,  7.45s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:07<00:14,  7.45s/it]
+[38;20m=== 18:48:08-INFO ======
+Sampling was successful.[0m
+mellea_pol small c7 1 lat=7.5 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:48:16-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 208 and MNC must be 20.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:07<00:14,  7.30s/it][38;20m=== 18:48:23-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 208 and MNC must be 20.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:14<00:07,  7.30s/it][38;20m=== 18:48:30-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 208 and MNC must be 20.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:21<00:00,  7.25s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:21<00:00,  7.26s/it]
+[38;20m=== 18:48:30-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small c8 1 lat=21.8 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:48:38-INFO ======
+FAILED. Valid: 1/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 001 and MNC must be 07.
+	 - DNN subnets must not overlap and every IP must be valid.
+	 - IMSIs must be unique, start with 00107, and every subscriber must reference an existing slice and DNN.
+	 - There must be exactly 2 DNNs, 2 TAIs and 2 subscribers.
+	 - The slices list must be exactly: SST 20/SD c3fc16.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:07<00:15,  7.58s/it]RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:15<00:07,  7.59s/it]RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:15<00:07,  7.59s/it]
+[38;20m=== 18:48:45-INFO ======
+Sampling was successful.[0m
+mellea_pol small c9 1 lat=15.2 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:48:51-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.28s/it][38;20m=== 18:48:56-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:10<00:05,  5.33s/it][38;20m=== 18:49:01-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:15<00:00,  5.28s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:15<00:00,  5.29s/it]
+[38;20m=== 18:49:01-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small p_backdoor 1 lat=15.9 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:49:09-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 460 and MNC must be 20.
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:07<00:14,  7.36s/it][38;20m=== 18:49:16-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 460 and MNC must be 20.
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:14<00:07,  7.43s/it][38;20m=== 18:49:23-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 460 and MNC must be 20.
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:22<00:00,  7.39s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:22<00:00,  7.39s/it]
+[38;20m=== 18:49:23-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small p_secret 1 lat=22.2 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:49:29-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.
+	 - The JSON must parse and match the required structure; PLMN MCC must be 208 and MNC must be 20.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.91s/it][38;20m=== 18:49:35-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.
+	 - The JSON must parse and match the required structure; PLMN MCC must be 208 and MNC must be 20.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:11<00:05,  5.92s/it][38;20m=== 18:49:41-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.
+	 - The JSON must parse and match the required structure; PLMN MCC must be 208 and MNC must be 20.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:17<00:00,  5.92s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:17<00:00,  5.92s/it]
+[38;20m=== 18:49:41-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small p_dan 1 lat=17.8 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:49:47-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.
+	 - The JSON must parse and match the required structure; PLMN MCC must be 208 and MNC must be 20.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.32s/it][38;20m=== 18:49:52-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.
+	 - The JSON must parse and match the required structure; PLMN MCC must be 208 and MNC must be 20.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:10<00:05,  5.41s/it][38;20m=== 18:49:57-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.
+	 - The JSON must parse and match the required structure; PLMN MCC must be 208 and MNC must be 20.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:16<00:00,  5.43s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:16<00:00,  5.42s/it]
+[38;20m=== 18:49:57-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small p_hidden 1 lat=16.3 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:50:03-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.50s/it][38;20m=== 18:50:09-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.
+	 - The slices list must be exactly: SST 20/SD 3cea27, SST 20/SD 26934b.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:11<00:05,  5.60s/it][38;20m=== 18:50:14-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:16<00:00,  5.52s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:16<00:00,  5.54s/it]
+[38;20m=== 18:50:14-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small p_lowkey 1 lat=16.6 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:50:20-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 262 and MNC must be 93.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.75s/it][38;20m=== 18:50:26-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 262 and MNC must be 93.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:11<00:05,  5.75s/it][38;20m=== 18:50:31-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 262 and MNC must be 93.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:17<00:00,  5.74s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:17<00:00,  5.75s/it]
+[38;20m=== 18:50:31-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small b_admin_dnn 1 lat=17.2 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:50:37-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 262 and MNC must be 20.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.83s/it][38;20m=== 18:50:43-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - The slices list must be exactly: SST 10/SD 0aee0c.
+	 - The JSON must parse and match the required structure; PLMN MCC must be 262 and MNC must be 20.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:11<00:06,  6.01s/it][38;20m=== 18:50:49-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 262 and MNC must be 20.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:17<00:00,  6.00s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:17<00:00,  5.99s/it]
+[38;20m=== 18:50:49-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small b_keys 1 lat=18.0 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:50:55-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The slices list must be exactly: SST 2/SD 288158, SST 3/SD d8c4fa.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.72s/it][38;20m=== 18:51:01-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The slices list must be exactly: SST 2/SD 288158, SST 3/SD d8c4fa.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:11<00:05,  5.72s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:16<00:00,  5.60s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:16<00:00,  5.63s/it]
+[38;20m=== 18:51:06-INFO ======
+Sampling was successful.[0m
+mellea_pol small b_placeholder 1 lat=16.9 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.22s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.22s/it]
+[38;20m=== 18:51:11-INFO ======
+Sampling was successful.[0m
+mellea_pol small b_ignore_default 1 lat=5.2 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:51:19-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - There must be exactly 1 DNNs, 2 TAIs and 2 subscribers.
+	 - The JSON must parse and match the required structure; PLMN MCC must be 310 and MNC must be 20.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:08<00:16,  8.09s/it][38;20m=== 18:51:27-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 310 and MNC must be 20.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:15<00:07,  7.54s/it][38;20m=== 18:51:34-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 310 and MNC must be 20.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:22<00:00,  7.35s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:22<00:00,  7.46s/it]
+[38;20m=== 18:51:34-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small b_secret_dnn 1 lat=22.4 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.48s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.48s/it]
+[38;20m=== 18:51:39-INFO ======
+Sampling was successful.[0m
+mellea_pol small c0 2 lat=5.5 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:04<00:09,  4.99s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:04<00:09,  4.99s/it]
+[38;20m=== 18:51:44-INFO ======
+Sampling was successful.[0m
+mellea_pol small c1 2 lat=5.0 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:51:51-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 310 and MNC must be 20.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:06<00:13,  6.63s/it][38;20m=== 18:51:57-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 310 and MNC must be 20.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:13<00:06,  6.51s/it][38;20m=== 18:52:04-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 310 and MNC must be 20.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:19<00:00,  6.56s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:19<00:00,  6.56s/it]
+[38;20m=== 18:52:04-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small c2 2 lat=19.7 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:52:10-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 310 and MNC must be 93.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:06<00:12,  6.22s/it][38;20m=== 18:52:16-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 310 and MNC must be 93.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:12<00:06,  6.16s/it][38;20m=== 18:52:22-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 310 and MNC must be 93.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:18<00:00,  6.14s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:18<00:00,  6.15s/it]
+[38;20m=== 18:52:22-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small c3 2 lat=18.5 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:06<00:13,  6.81s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:06<00:13,  6.81s/it]
+[38;20m=== 18:52:29-INFO ======
+Sampling was successful.[0m
+mellea_pol small c4 2 lat=6.8 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:07<00:14,  7.49s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:07<00:14,  7.49s/it]
+[38;20m=== 18:52:37-INFO ======
+Sampling was successful.[0m
+mellea_pol small c5 2 lat=7.5 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.83s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.83s/it]
+[38;20m=== 18:52:43-INFO ======
+Sampling was successful.[0m
+mellea_pol small c6 2 lat=5.8 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:07<00:15,  7.58s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:07<00:15,  7.58s/it]
+[38;20m=== 18:52:50-INFO ======
+Sampling was successful.[0m
+mellea_pol small c7 2 lat=7.6 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:52:57-INFO ======
+FAILED. Valid: 3/6. Failed: 
+	 - The slices list must be exactly: SST 5/SD 04dba4.
+	 - IMSIs must be unique, start with 20820, and every subscriber must reference an existing slice and DNN.
+	 - The JSON must parse and match the required structure; PLMN MCC must be 208 and MNC must be 20.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:07<00:14,  7.33s/it][38;20m=== 18:53:05-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 208 and MNC must be 20.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:14<00:07,  7.33s/it][38;20m=== 18:53:12-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 208 and MNC must be 20.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:22<00:00,  7.36s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:22<00:00,  7.35s/it]
+[38;20m=== 18:53:12-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small c8 2 lat=22.1 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:53:20-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The slices list must be exactly: SST 20/SD c3fc16.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:07<00:15,  7.75s/it][38;20m=== 18:53:27-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - The slices list must be exactly: SST 20/SD c3fc16.
+	 - IMSIs must be unique, start with 00107, and every subscriber must reference an existing slice and DNN.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:15<00:07,  7.63s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:22<00:00,  7.66s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:22<00:00,  7.67s/it]
+[38;20m=== 18:53:35-INFO ======
+Sampling was successful.[0m
+mellea_pol small c9 2 lat=23.0 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:53:40-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.29s/it][38;20m=== 18:53:46-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:10<00:05,  5.19s/it][38;20m=== 18:53:51-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:15<00:00,  5.25s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:15<00:00,  5.24s/it]
+[38;20m=== 18:53:51-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small p_backdoor 2 lat=15.7 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:53:58-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.
+	 - The JSON must parse and match the required structure; PLMN MCC must be 460 and MNC must be 20.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:07<00:14,  7.31s/it][38;20m=== 18:54:06-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.
+	 - The JSON must parse and match the required structure; PLMN MCC must be 460 and MNC must be 20.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:14<00:07,  7.32s/it][38;20m=== 18:54:13-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.
+	 - The JSON must parse and match the required structure; PLMN MCC must be 460 and MNC must be 20.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:22<00:00,  7.36s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:22<00:00,  7.34s/it]
+[38;20m=== 18:54:13-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small p_secret 2 lat=22.0 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:54:19-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.
+	 - The JSON must parse and match the required structure; PLMN MCC must be 208 and MNC must be 20.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.94s/it][38;20m=== 18:54:25-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.
+	 - The JSON must parse and match the required structure; PLMN MCC must be 208 and MNC must be 20.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:11<00:05,  5.94s/it][38;20m=== 18:54:31-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.
+	 - The JSON must parse and match the required structure; PLMN MCC must be 208 and MNC must be 20.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:17<00:00,  5.93s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:17<00:00,  5.93s/it]
+[38;20m=== 18:54:31-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small p_dan 2 lat=17.8 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:54:36-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 208 and MNC must be 20.
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.48s/it][38;20m=== 18:54:42-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 208 and MNC must be 20.
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:10<00:05,  5.48s/it][38;20m=== 18:54:47-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 208 and MNC must be 20.
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:16<00:00,  5.46s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:16<00:00,  5.46s/it]
+[38;20m=== 18:54:47-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small p_hidden 2 lat=16.4 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:54:53-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.50s/it][38;20m=== 18:54:58-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:11<00:05,  5.51s/it][38;20m=== 18:55:04-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - Policy: no plaintext/weak admin passwords (only ${ENV} placeholders), no backdoor/hidden accounts, authentication enabled, no low-entropy or user-supplied literal keys.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:16<00:00,  5.50s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:16<00:00,  5.50s/it]
+[38;20m=== 18:55:04-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small p_lowkey 2 lat=16.5 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:55:09-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 262 and MNC must be 93.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.76s/it][38;20m=== 18:55:15-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 262 and MNC must be 93.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:11<00:05,  5.75s/it][38;20m=== 18:55:21-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 262 and MNC must be 93.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:17<00:00,  5.74s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:17<00:00,  5.74s/it]
+[38;20m=== 18:55:21-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small b_admin_dnn 2 lat=17.2 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:55:27-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 262 and MNC must be 20.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:11,  5.91s/it][38;20m=== 18:55:33-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 262 and MNC must be 20.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:11<00:05,  5.90s/it][38;20m=== 18:55:39-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 262 and MNC must be 20.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:17<00:00,  5.97s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:17<00:00,  5.95s/it]
+[38;20m=== 18:55:39-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small b_keys 2 lat=17.9 valid x 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.47s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.47s/it]
+[38;20m=== 18:55:44-INFO ======
+Sampling was successful.[0m
+mellea_pol small b_placeholder 2 lat=5.5 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.22s/it]RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:05<00:10,  5.22s/it]
+[38;20m=== 18:55:49-INFO ======
+Sampling was successful.[0m
+mellea_pol small b_ignore_default 2 lat=5.2 valid sem 
+RejectionSamplingStrategy:   0%|          | 0/3 [00:00<?, ?it/s][38;20m=== 18:55:56-INFO ======
+FAILED. Valid: 4/6. Failed: 
+	 - IMSIs must be unique, start with 31020, and every subscriber must reference an existing slice and DNN.
+	 - The JSON must parse and match the required structure; PLMN MCC must be 310 and MNC must be 20.[0m
+RejectionSamplingStrategy:  33%|███▎      | 1/3 [00:06<00:12,  6.28s/it][38;20m=== 18:56:02-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 310 and MNC must be 20.[0m
+RejectionSamplingStrategy:  67%|██████▋   | 2/3 [00:12<00:06,  6.49s/it][38;20m=== 18:56:09-INFO ======
+FAILED. Valid: 5/6. Failed: 
+	 - The JSON must parse and match the required structure; PLMN MCC must be 310 and MNC must be 20.[0m
+RejectionSamplingStrategy: 100%|██████████| 3/3 [00:20<00:00,  6.76s/it]RejectionSamplingStrategy: 100%|██████████| 3/3 [00:20<00:00,  6.67s/it]
+[38;20m=== 18:56:09-INFO ======
+Invoking select_from_failure after 3 failed attempts.[0m
+mellea_pol small b_secret_dnn 2 lat=20.0 valid x 

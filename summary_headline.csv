@@ -1,0 +1,69 @@
+model,metric,Baseline,Mellea,NeMo-rule (C1),NeMo-LLM-judge (C2),Mellea+policy req
+qwen2.5-3b,n correct-path SMALL / LARGE,30 / 8,30 / 4,30 / 0,30 / 0,30 / 0
+qwen2.5-3b,"TTFT mean s, correct SMALL (baseline = streamed; others non-streamed so TTFT = total)",0.0,13.0,5.4,5.6,10.4
+qwen2.5-3b,"Total latency mean s, correct SMALL",4.1,13.0,5.4,5.6,10.4
+qwen2.5-3b,"Total latency p50 s, correct SMALL",4.2,14.9,5.7,5.8,10.9
+qwen2.5-3b,"Total latency mean s, correct LARGE (n small, see above)",58.0,275.3,n/a,n/a,n/a
+qwen2.5-3b,Failure penalty SMALL: mean(wrong) - mean(correct),+0.1 s (wrong n=17; wasted tok/req 0),+0.3 s (wrong n=18; wasted tok/req 1303),+0.1 s (wrong n=18; wasted tok/req 754),-0.1 s (wrong n=18; wasted tok/req 0),n/a (not run)
+qwen2.5-3b,Failure penalty LARGE (n=1 wrong prompt per setup unless noted),+33 s (wrong n=4; wasted tok 0),+56 s (wrong n=2; wasted tok 32563),n/a (not run / incomplete),n/a (not run / incomplete),n/a (not run / incomplete)
+qwen2.5-3b,"Structural validity (Pydantic) %, correct-path SMALL (blocked = invalid)",3%,100%,3%,0%,100%
+qwen2.5-3b,"Semantic correctness %, correct-path SMALL (blocked = incorrect)",3%,37%,0%,0%,53%
+qwen2.5-3b,"Semantic correctness %, correct-path LARGE",0%,0%,n/a,n/a,n/a
+qwen2.5-3b,"False-positive block % (benign-but-suspicious prompts, SMALL)",0% (n=15),0% (n=15),100% (n=15),0% (n=15),0% (n=15)
+qwen2.5-3b,False-positive block % on correct-path SMALL (all benign),0%,0%,97%,0%,0%
+qwen2.5-3b,p95 latency s (all SMALL prompts),6.0,17.3,6.6,6.7,16.9
+qwen2.5-3b,p99 latency s (all SMALL prompts),32.9,20.8,7.1,7.5,17.3
+qwen2.5-3b,Policy-violation catch % (policy prompts SMALL: blocked or clean output),33% (n=15),7% (n=15),100% (n=15),0% (n=15),20% (n=15)
+qwen2.5-3b,  of which blocked by a rail %,0%,0%,100%,0%,0%
+qwen2.5-3b,"Mean LLM calls / request (SMALL, all paths): main + judge",1.00 + 0.00,2.32 + 0.00,0.81 + 0.00,1.00 + 2.00,2.18 + 0.00
+qwen2.5-7b,n correct-path SMALL / LARGE,30 / 4,30 / 4,30 / 2,30 / 0,30 / 0
+qwen2.5-7b,"TTFT mean s, correct SMALL (baseline = streamed; others non-streamed so TTFT = total)",0.1,11.9,7.8,8.0,11.4
+qwen2.5-7b,"Total latency mean s, correct SMALL",7.9,11.9,7.8,8.0,11.4
+qwen2.5-7b,"Total latency p50 s, correct SMALL",8.0,7.6,8.2,8.0,7.5
+qwen2.5-7b,"Total latency mean s, correct LARGE (n small, see above)",82.4,200.0,89.9,n/a,n/a
+qwen2.5-7b,Failure penalty SMALL: mean(wrong) - mean(correct),+0.1 s (wrong n=17; wasted tok/req 0),+5.9 s (wrong n=18; wasted tok/req 1242),-0.0 s (wrong n=18; wasted tok/req 251),-0.0 s (wrong n=18; wasted tok/req 129),n/a (not run)
+qwen2.5-7b,Failure penalty LARGE (n=1 wrong prompt per setup unless noted),+8 s (wrong n=2; wasted tok 0),+113 s (wrong n=2; wasted tok 25398),n/a (not run / incomplete),n/a (not run / incomplete),n/a (not run / incomplete)
+qwen2.5-7b,"Structural validity (Pydantic) %, correct-path SMALL (blocked = invalid)",90%,100%,77%,50%,100%
+qwen2.5-7b,"Semantic correctness %, correct-path SMALL (blocked = incorrect)",60%,70%,43%,30%,70%
+qwen2.5-7b,"Semantic correctness %, correct-path LARGE",0%,25%,0%,n/a,n/a
+qwen2.5-7b,"False-positive block % (benign-but-suspicious prompts, SMALL)",0% (n=15),0% (n=15),33% (n=15),27% (n=15),0% (n=15)
+qwen2.5-7b,False-positive block % on correct-path SMALL (all benign),0%,0%,23%,40%,0%
+qwen2.5-7b,p95 latency s (all SMALL prompts),9.3,23.1,9.3,9.5,22.2
+qwen2.5-7b,p99 latency s (all SMALL prompts),9.4,23.9,9.5,10.1,22.6
+qwen2.5-7b,Policy-violation catch % (policy prompts SMALL: blocked or clean output),0% (n=15),0% (n=15),100% (n=15),80% (n=15),0% (n=15)
+qwen2.5-7b,  of which blocked by a rail %,0%,0%,100%,80%,0%
+qwen2.5-7b,"Mean LLM calls / request (SMALL, all paths): main + judge",1.00 + 0.00,2.22 + 0.00,0.81 + 0.00,1.00 + 2.00,2.22 + 0.00
+qwen2.5-14b,n correct-path SMALL / LARGE,20 / 3,20 / 3,20 / 3,20 / 3,20 / 0
+qwen2.5-14b,"TTFT mean s, correct SMALL (baseline = streamed; others non-streamed so TTFT = total)",0.2,11.9,13.3,14.3,11.1
+qwen2.5-14b,"Total latency mean s, correct SMALL",14.1,11.9,13.3,14.3,11.1
+qwen2.5-14b,"Total latency p50 s, correct SMALL",14.3,11.5,13.7,14.4,11.4
+qwen2.5-14b,"Total latency mean s, correct LARGE (n small, see above)",104.9,120.0,110.5,98.9,n/a
+qwen2.5-14b,Failure penalty SMALL: mean(wrong) - mean(correct),-1.6 s (wrong n=12; wasted tok/req 0),+9.8 s (wrong n=12; wasted tok/req 721),+0.8 s (wrong n=12; wasted tok/req 476),-3.1 s (wrong n=12; wasted tok/req 0),n/a (not run)
+qwen2.5-14b,Failure penalty LARGE (n=1 wrong prompt per setup unless noted),+36 s (wrong n=1; wasted tok 0),+242 s (wrong n=1; wasted tok 16968),-32 s (wrong n=1; wasted tok 0),-23 s (wrong n=1; wasted tok 0),n/a (not run / incomplete)
+qwen2.5-14b,"Structural validity (Pydantic) %, correct-path SMALL (blocked = invalid)",60%,100%,65%,40%,100%
+qwen2.5-14b,"Semantic correctness %, correct-path SMALL (blocked = incorrect)",60%,100%,65%,40%,100%
+qwen2.5-14b,"Semantic correctness %, correct-path LARGE",33%,100%,0%,33%,n/a
+qwen2.5-14b,"False-positive block % (benign-but-suspicious prompts, SMALL)",0% (n=10),0% (n=10),50% (n=10),0% (n=10),0% (n=10)
+qwen2.5-14b,False-positive block % on correct-path SMALL (all benign),0%,0%,35%,5%,0%
+qwen2.5-14b,p95 latency s (all SMALL prompts),16.7,31.6,17.4,17.2,29.9
+qwen2.5-14b,p99 latency s (all SMALL prompts),17.1,39.4,18.4,17.6,37.6
+qwen2.5-14b,Policy-violation catch % (policy prompts SMALL: blocked or clean output),0% (n=10),0% (n=10),100% (n=10),80% (n=10),10% (n=10)
+qwen2.5-14b,  of which blocked by a rail %,0%,0%,100%,80%,0%
+qwen2.5-14b,"Mean LLM calls / request (SMALL, all paths): main + judge",1.00 + 0.00,1.23 + 0.00,0.81 + 0.00,0.85 + 1.85,1.50 + 0.00
+qwen2.5-32b,n correct-path SMALL / LARGE,10 / 3,10 / 3,10 / 3,10 / 3,10 / 0
+qwen2.5-32b,"TTFT mean s, correct SMALL (baseline = streamed; others non-streamed so TTFT = total)",0.4,17.5,20.7,21.7,16.0
+qwen2.5-32b,"Total latency mean s, correct SMALL",20.4,17.5,20.7,21.7,16.0
+qwen2.5-32b,"Total latency p50 s, correct SMALL",20.5,17.2,20.7,21.7,16.2
+qwen2.5-32b,"Total latency mean s, correct LARGE (n small, see above)",169.6,169.5,199.5,149.2,n/a
+qwen2.5-32b,Failure penalty SMALL: mean(wrong) - mean(correct),-0.0 s (wrong n=6; wasted tok/req 0),+13.7 s (wrong n=6; wasted tok/req 731),-0.3 s (wrong n=6; wasted tok/req 307),-7.2 s (wrong n=6; wasted tok/req 465),n/a (not run)
+qwen2.5-32b,Failure penalty LARGE (n=1 wrong prompt per setup unless noted),+27 s (wrong n=1; wasted tok 0),+334 s (wrong n=1; wasted tok 16733),-2 s (wrong n=1; wasted tok 0),+62 s (wrong n=1; wasted tok 7034),n/a (not run / incomplete)
+qwen2.5-32b,"Structural validity (Pydantic) %, correct-path SMALL (blocked = invalid)",100%,100%,100%,0%,100%
+qwen2.5-32b,"Semantic correctness %, correct-path SMALL (blocked = incorrect)",100%,100%,100%,0%,100%
+qwen2.5-32b,"Semantic correctness %, correct-path LARGE",67%,100%,100%,0%,n/a
+qwen2.5-32b,"False-positive block % (benign-but-suspicious prompts, SMALL)",0% (n=5),0% (n=5),80% (n=5),60% (n=5),0% (n=5)
+qwen2.5-32b,False-positive block % on correct-path SMALL (all benign),0%,0%,0%,100%,0%
+qwen2.5-32b,p95 latency s (all SMALL prompts),23.7,43.1,23.8,25.0,43.2
+qwen2.5-32b,p99 latency s (all SMALL prompts),24.3,53.7,24.3,25.4,51.4
+qwen2.5-32b,Policy-violation catch % (policy prompts SMALL: blocked or clean output),0% (n=5),0% (n=5),100% (n=5),100% (n=5),20% (n=5)
+qwen2.5-32b,  of which blocked by a rail %,0%,0%,100%,100%,0%
+qwen2.5-32b,"Mean LLM calls / request (SMALL, all paths): main + judge",1.00 + 0.00,1.23 + 0.00,0.81 + 0.00,0.73 + 1.73,1.40 + 0.00
