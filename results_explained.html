@@ -1,0 +1,122 @@
+<title>Mellea vs NeMo Results</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;600&family=Fraunces:opsz,wght@9..144,600&display=swap">
+<style>
+/* Layout: single reading column; legend first, then one small table per metric (setups as columns) */
+:root{
+  --bg:#f6f7f9; --surface:#ffffff; --fg:#1b2230; --muted:#5a6475; --line:#dde2ea;
+  --accent:#2a5bd7; --good:#1f8a4c; --goodbg:#e3f4ea; --mid:#9a6a00; --midbg:#fbf1d9; --bad:#b4332b; --badbg:#fbe4e2;
+  --display:"Fraunces",Georgia,serif; --body:"IBM Plex Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#12161d; --surface:#1a1f28; --fg:#e6eaf1; --muted:#9aa4b5; --line:#2c3340;
+  --accent:#7aa2ff; --good:#5fd08f; --goodbg:#163626; --mid:#e6b54a; --midbg:#3a2f12; --bad:#ff8a80; --badbg:#3d1b19; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12161d; --surface:#1a1f28; --fg:#e6eaf1; --muted:#9aa4b5; --line:#2c3340;
+  --accent:#7aa2ff; --good:#5fd08f; --goodbg:#163626; --mid:#e6b54a; --midbg:#3a2f12; --bad:#ff8a80; --badbg:#3d1b19; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:15px/1.6 var(--body);padding-inline:16px;padding-block:32px 64px}
+main{max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:36px}
+h1{font:600 2rem/1.2 var(--display);margin:0;text-wrap:balance}
+h2{font:600 1.3rem/1.3 var(--display);margin:0 0 6px;text-wrap:balance}
+p{margin:0;max-width:68ch}
+.muted{color:var(--muted)}
+.setups{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.setup{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px;min-width:0}
+.setup b{font-family:var(--mono);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.setup h3{margin:4px 0 6px;font-size:1rem}
+.setup p{font-size:.88rem;color:var(--muted)}
+.metric{display:flex;flex-direction:column;gap:10px}
+.def{background:var(--surface);border-left:3px solid var(--accent);padding:10px 14px;border-radius:0 6px 6px 0}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:520px;font-variant-numeric:tabular-nums}
+th,td{padding:8px 10px;text-align:center;border-bottom:1px solid var(--line)}
+th{font:600 .78rem var(--mono);letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+td:first-child,th:first-child{text-align:left;font-family:var(--mono)}
+td.v{font-family:var(--mono);font-weight:600}
+.g{background:var(--goodbg);color:var(--good)} .m{background:var(--midbg);color:var(--mid)} .b{background:var(--badbg);color:var(--bad)}
+.read{font-size:.9rem}
+.read b{color:var(--fg)}
+.key{display:flex;gap:14px;flex-wrap:wrap;font-size:.85rem}
+.key span{padding:2px 8px;border-radius:4px;font-family:var(--mono)}
+ul{margin:0;padding-left:20px;max-width:68ch} li{margin-bottom:4px}
+</style>
+
+<main>
+<header style="display:flex;flex-direction:column;gap:10px">
+  <h1>Mellea vs NeMo Guardrails on 5G core configs</h1>
+  <p class="muted">Each cell in the original table packed four numbers, one per setup, always in this order: <b>Baseline / Mellea / NeMo-rule / NeMo-judge</b>. Below, every metric gets its own table with the four setups as separate columns. All values are percentages of the prompts in that test group. Runs: Qwen2.5 models on one A100 80GB with vLLM.</p>
+  <div class="key"><span class="g">good for this metric</span><span class="m">middling</span><span class="b">bad for this metric</span></div>
+</header>
+
+<section>
+  <h2>The four setups (the columns)</h2>
+  <div class="setups">
+    <div class="setup"><b>Baseline</b><h3>Plain model</h3><p>The model is asked for JSON. Nothing checks or constrains the answer.</p></div>
+    <div class="setup"><b>Mellea</b><h3>Constrained + retry</h3><p>Decoding is forced to follow the config schema token by token. Then checks run on the values; if one fails it generates again (up to 3 tries).</p></div>
+    <div class="setup"><b>NeMo-rule</b><h3>Rule-based rails</h3><p>NeMo Guardrails with fixed rules: a keyword filter on the request, and after the answer, a schema check plus a regex for secrets (keys, IMSI lists). Blocks with a canned refusal.</p></div>
+    <div class="setup"><b>NeMo-judge</b><h3>Model-as-judge rails</h3><p>NeMo Guardrails asks the same model "is this request / answer OK?" before and after generation. Blocks with a canned refusal.</p></div>
+  </div>
+</section>
+
+<section class="metric">
+  <h2>1. Structure valid</h2>
+  <p class="def">Share of normal (correct-path) prompts where the final answer is a well-formed config: it parses as JSON and every field has the right type and format (15-digit IMSI, 32-hex key, 6-hex slice SD, valid IPs). A blocked answer counts as not valid. <b>Higher is better.</b></p>
+  <div class="scroll"><table>
+    <tr><th>Model</th><th>Baseline</th><th>Mellea</th><th>NeMo-rule</th><th>NeMo-judge</th></tr>
+    <tr><td>3B</td><td class="v b">3%</td><td class="v g">100%</td><td class="v b">3%</td><td class="v b">0%</td></tr>
+    <tr><td>7B</td><td class="v g">90%</td><td class="v g">100%</td><td class="v m">77%</td><td class="v m">50%</td></tr>
+    <tr><td>14B</td><td class="v m">60%</td><td class="v g">100%</td><td class="v m">65%</td><td class="v b">40%</td></tr>
+    <tr><td>32B (4-bit)</td><td class="v g">100%</td><td class="v g">100%</td><td class="v g">100%</td><td class="v b">0%</td></tr>
+  </table></div>
+  <p class="read"><b>How to read it:</b> Mellea is always 100% because the decoder cannot produce anything that breaks the schema. NeMo cannot fix a bad answer, only block it, so it stays at the baseline level or below. The 3B model alone almost never writes a valid IMSI. NeMo-judge at 32B shows 0% because the judge blocked every answer, even the valid ones.</p>
+</section>
+
+<section class="metric">
+  <h2>2. Semantically correct</h2>
+  <p class="def">Share of normal prompts where the config is valid <i>and</i> matches what was asked: the right MCC/MNC, slice SST/SD values, number of slices and subscribers, and non-overlapping subnets. <b>Higher is better.</b></p>
+  <div class="scroll"><table>
+    <tr><th>Model</th><th>Baseline</th><th>Mellea</th><th>NeMo-rule</th><th>NeMo-judge</th></tr>
+    <tr><td>3B</td><td class="v b">3%</td><td class="v m">37%</td><td class="v b">0%</td><td class="v b">0%</td></tr>
+    <tr><td>7B</td><td class="v m">60%</td><td class="v m">70%</td><td class="v m">43%</td><td class="v b">30%</td></tr>
+    <tr><td>14B</td><td class="v m">60%</td><td class="v g">100%</td><td class="v m">65%</td><td class="v b">40%</td></tr>
+    <tr><td>32B (4-bit)</td><td class="v g">100%</td><td class="v g">100%</td><td class="v g">100%</td><td class="v b">0%</td></tr>
+  </table></div>
+  <p class="read"><b>How to read it:</b> Mellea leads because its retry loop was given these exact checks. NeMo's rails only check format and policy, never the requested values, so this comparison favors Mellea by design. A schema can make the output parse without making it right: at 3B Mellea reaches 100% structure but only 37% correct values.</p>
+</section>
+
+<section class="metric">
+  <h2>3. Policy violations caught</h2>
+  <p class="def">Share of deliberately bad requests that were stopped. These ask the model to put plaintext keys or real-looking subscriber data in the config, or to add a backdoor admin account. <b>Higher is better.</b></p>
+  <div class="scroll"><table>
+    <tr><th>Model</th><th>Baseline</th><th>Mellea</th><th>NeMo-rule</th><th>NeMo-judge</th></tr>
+    <tr><td>3B</td><td class="v m">33%</td><td class="v b">7%</td><td class="v g">100%</td><td class="v b">0%</td></tr>
+    <tr><td>7B</td><td class="v b">0%</td><td class="v b">0%</td><td class="v g">100%</td><td class="v g">80%</td></tr>
+    <tr><td>14B</td><td class="v b">0%</td><td class="v b">0%</td><td class="v g">100%</td><td class="v g">80%</td></tr>
+    <tr><td>32B (4-bit)</td><td class="v b">0%</td><td class="v b">0%</td><td class="v g">100%</td><td class="v g">100%</td></tr>
+  </table></div>
+  <p class="read"><b>How to read it:</b> Only NeMo has a policy layer. Mellea enforces format, not safety, so it lets these through. The 33% and 7% at 3B are cases where the small model failed or refused by itself. NeMo-rule's 100% is optimistic, because the same person wrote the bad prompts and the regex rules that catch them.</p>
+</section>
+
+<section class="metric">
+  <h2>4. Harmless prompts blocked (false positives)</h2>
+  <p class="def">Share of legitimate requests that only <i>look</i> suspicious (for example "set the subscriber key field", "configure the admin interface") that got wrongly blocked. <b>Lower is better.</b></p>
+  <div class="scroll"><table>
+    <tr><th>Model</th><th>Baseline</th><th>Mellea</th><th>NeMo-rule</th><th>NeMo-judge</th></tr>
+    <tr><td>3B</td><td class="v g">0%</td><td class="v g">0%</td><td class="v b">100%</td><td class="v g">0%</td></tr>
+    <tr><td>7B</td><td class="v g">0%</td><td class="v g">0%</td><td class="v m">33%</td><td class="v m">27%</td></tr>
+    <tr><td>14B</td><td class="v g">0%</td><td class="v g">0%</td><td class="v m">50%</td><td class="v g">0%</td></tr>
+    <tr><td>32B (4-bit)</td><td class="v g">0%</td><td class="v g">0%</td><td class="v b">80%</td><td class="v b">60%</td></tr>
+  </table></div>
+  <p class="read"><b>How to read it:</b> Baseline and Mellea never block anything, so they are always 0%. Most NeMo-rule blocks here happened because the answer failed its schema check, not because a policy rule misfired; its input filter blocked no harmless prompt at any size. NeMo-judge's blocks come from the judge model mistaking normal config terms for risky content.</p>
+</section>
+
+<section style="display:flex;flex-direction:column;gap:8px">
+  <h2>Bottom line</h2>
+  <ul>
+    <li><b>Need the config to always parse?</b> Use Mellea. It guarantees structure for about 2% extra time per token.</li>
+    <li><b>Need to stop leaked keys, PII or backdoors?</b> Use NeMo. Rule-based rails were fast and caught everything here. The judge rail misfires when the same model judges itself.</li>
+    <li><b>Wrong answers are where Mellea gets slow.</b> On the large config a failed answer cost 240 to 330 extra seconds, because each retry starts from scratch.</li>
+    <li>The two tools solve different problems and can be stacked: Mellea for structure, NeMo for policy.</li>
+  </ul>
+  <p class="muted" style="font-size:.85rem">Sample sizes are small: 3 runs per prompt for 3B and 7B, 2 for 14B, 1 for 32B. Treat differences of a few points as noise. Full numbers, latencies and source citations are in RESULTS.md in the Bench_Mellea repository.</p>
+</section>
+</main>

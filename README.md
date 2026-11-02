@@ -4,3 +4,5 @@ Benchmark of three ways to get a valid, policy-compliant 5G-core configuration f
 
 Results, setup, caveats and source citations: [RESULTS.md](RESULTS.md). Raw per-request JSONL: `hpc_results/runs/*/results/`. Scripts: `scripts/` (`bench.py`, `hpc_job.sh` for the Slurm job, `make_results.py` for the tables). NeMo configs: `nemo_*`. Scripts expect to run from one directory with `nemo_*` beside them (copy `scripts/*` next to `nemo_*`).
 `ollama_local_partial_sidenote/` holds partial earlier Jetson/Ollama rows and is not comparable.
+
+Plain-language explainer of the results table: [results_explained.html](results_explained.html) (download and open in a browser).
