@@ -109,6 +109,49 @@ ul{margin:0;padding-left:20px;max-width:68ch} li{margin-bottom:4px}
   <p class="read"><b>How to read it:</b> Baseline and Mellea never block anything, so they are always 0%. Most NeMo-rule blocks here happened because the answer failed its schema check, not because a policy rule misfired; its input filter blocked no harmless prompt at any size. NeMo-judge's blocks come from the judge model mistaking normal config terms for risky content.</p>
 </section>
 
+<section class="metric">
+  <h2>5. Response time per prompt</h2>
+  <p class="def">Seconds from sending one prompt until the full config comes back. Mellea's time includes its retries; NeMo-judge's includes the extra judge calls. <b>Lower is better.</b> Colors compare each setup with the plain model on the same row.</p>
+
+  <h3 style="margin:8px 0 0;font-size:1rem">Small config (~15 fields), average, correct answer</h3>
+  <div class="scroll"><table>
+    <tr><th>Model</th><th>Baseline</th><th>Mellea</th><th>NeMo-rule</th><th>NeMo-judge</th></tr>
+    <tr><td>3B</td><td class="v">4.1 s</td><td class="v b">13.0 s</td><td class="v m">5.4 s</td><td class="v m">5.6 s</td></tr>
+    <tr><td>7B</td><td class="v">7.9 s</td><td class="v b">11.9 s</td><td class="v g">7.8 s</td><td class="v g">8.0 s</td></tr>
+    <tr><td>14B</td><td class="v">14.1 s</td><td class="v g">11.9 s</td><td class="v g">13.3 s</td><td class="v g">14.3 s</td></tr>
+    <tr><td>32B (4-bit)</td><td class="v">20.4 s</td><td class="v g">17.5 s</td><td class="v g">20.7 s</td><td class="v g">21.7 s</td></tr>
+  </table></div>
+
+  <h3 style="margin:8px 0 0;font-size:1rem">Slow cases: 95th percentile, small config (5% of responses are slower)</h3>
+  <div class="scroll"><table>
+    <tr><th>Model</th><th>Baseline</th><th>Mellea</th><th>NeMo-rule</th><th>NeMo-judge</th></tr>
+    <tr><td>3B</td><td class="v">6.0 s</td><td class="v b">17.3 s</td><td class="v g">6.6 s</td><td class="v g">6.7 s</td></tr>
+    <tr><td>7B</td><td class="v">9.3 s</td><td class="v b">23.1 s</td><td class="v g">9.3 s</td><td class="v g">9.5 s</td></tr>
+    <tr><td>14B</td><td class="v">16.7 s</td><td class="v b">31.6 s</td><td class="v g">17.4 s</td><td class="v g">17.2 s</td></tr>
+    <tr><td>32B (4-bit)</td><td class="v">23.7 s</td><td class="v b">43.1 s</td><td class="v g">23.8 s</td><td class="v g">25.0 s</td></tr>
+  </table></div>
+
+  <h3 style="margin:8px 0 0;font-size:1rem">Large config (~500 fields), average, correct answer</h3>
+  <div class="scroll"><table>
+    <tr><th>Model</th><th>Baseline</th><th>Mellea</th><th>NeMo-rule</th><th>NeMo-judge</th></tr>
+    <tr><td>3B</td><td class="v">58 s</td><td class="v b">275 s</td><td class="v muted">not run</td><td class="v muted">not run</td></tr>
+    <tr><td>7B</td><td class="v">82 s</td><td class="v b">200 s</td><td class="v g">90 s</td><td class="v muted">not run</td></tr>
+    <tr><td>14B</td><td class="v">105 s</td><td class="v m">120 s</td><td class="v g">111 s</td><td class="v g">99 s</td></tr>
+    <tr><td>32B (4-bit)</td><td class="v">170 s</td><td class="v g">170 s</td><td class="v m">200 s</td><td class="v g">149 s</td></tr>
+  </table></div>
+  <p class="muted" style="font-size:.85rem">Only 1 to 8 runs per cell here; the 3B and 7B jobs hit their 3-hour limit before finishing.</p>
+
+  <h3 style="margin:8px 0 0;font-size:1rem">Extra time when the answer is wrong (small config)</h3>
+  <div class="scroll"><table>
+    <tr><th>Model</th><th>Baseline</th><th>Mellea</th><th>NeMo-rule</th><th>NeMo-judge</th></tr>
+    <tr><td>3B</td><td class="v">+0.1 s</td><td class="v g">+0.3 s</td><td class="v g">+0.1 s</td><td class="v g">−0.1 s</td></tr>
+    <tr><td>7B</td><td class="v">+0.1 s</td><td class="v b">+5.9 s</td><td class="v g">0.0 s</td><td class="v g">0.0 s</td></tr>
+    <tr><td>14B</td><td class="v">−1.6 s</td><td class="v b">+9.8 s</td><td class="v g">+0.8 s</td><td class="v g">−3.1 s</td></tr>
+    <tr><td>32B (4-bit)</td><td class="v">0.0 s</td><td class="v b">+13.7 s</td><td class="v g">−0.3 s</td><td class="v g">−7.2 s</td></tr>
+  </table></div>
+  <p class="read"><b>How to read it:</b> NeMo adds almost no time over the plain model, and its judge calls stay within about a second. Mellea's average is close to the others from 14B up, but its slow cases are roughly twice as slow, because some answers need a second or third try. When the answer is wrong, Mellea regenerates the whole config: on the large config that cost 240 to 330 extra seconds. NeMo just blocks and returns a short refusal, which can be faster than a normal answer (the negative values). Only the plain model was measured with streaming, where its first token arrived in 0.0 to 0.4 s; turning on NeMo's streaming output check on 7B raised that to about 2.3 s.</p>
+</section>
+
 <section style="display:flex;flex-direction:column;gap:8px">
   <h2>Bottom line</h2>
   <ul>
